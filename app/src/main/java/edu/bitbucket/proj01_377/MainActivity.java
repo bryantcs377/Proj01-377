@@ -1,5 +1,22 @@
 package edu.bitbucket.proj01_377;
+/*   Asg 01 in CS377, Fall 2016
+    The specs :
+0. Have a splash screen where users can choose to view or add reviews.
+1. Ability for user to add four fields of "review" info to a database
+2. Ability for user to view all previously added reviews in a summary table form.
+3. Ability for user to view a single review, accessed by clicking on a row in the summary table.
+4. Ability for user to filter the review summary table by any one of the four fields.
 
+   This app is a proof of concept for a universal judgement management tool to allow
+   user to impulsively, and compulsively judge ANYTHING!!
+
+   N.B. >>>>>>>>>>>>>>>>>
+    * This is tested on a Nexus 6 API 23 emulator
+    * Each onCreate of MainActivity adds 4 DB records with filter targets xx and xyz
+    *     can be commented out below (around line 40)
+
+  Proudly formatted in 1975 East German Retro styling
+ */
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new ReviewDBHelper(this);
         db = dbHelper.getWritableDatabase();
 
-        //  adding 4 or 5 startup reviews here
-        //initDb();
+        //  >>>>>>> adding 4 or 5 startup reviews here
+        initDb();
         // showReviews();
     }
 
