@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.bitbucket.proj01_377.MainActivity">
+    tools:context="edu.bitbucket.proj01_377.MainActivity"
+    android:background="@android:color/darker_gray"
+    android:weightSum="1">
+
 
     <TextView
+        android:text="Impulsive Judgement Manager\nJudge Everything!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSplash"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        android:background="@android:color/background_light"
+        android:layout_marginBottom="30sp"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:contentDescription="Judge Away"
+        android:outlineProvider="bounds"
+        android:requiresFadingEdge="horizontal"
+        android:shadowColor="@android:color/black" />
+
+    <Button
+        android:text="Add a Judgement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:id="@+id/btnAdd"
+        android:onClick="startDoAdd"
+        android:textStyle="normal|bold"
+        android:layout_alignParentStart="false"
+        android:textAlignment="center"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="10sp" />
+
+    <Button
+        android:text="List Judgements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:onClick="startDoList"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnList"
+        android:textAlignment="center"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:padding="10sp" />
+
+    <TextView
+        android:text="Filter List (optional) \n for  Review text containing:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFilter"
+        android:textStyle="normal|bold"
+        android:fontFamily="monospace"
+        android:layout_weight="0.08"
+        android:layout_marginLeft="30sp"
+        android:background="@android:color/holo_orange_dark"
+        tools:background="@android:color/holo_orange_light"
+        android:textAlignment="center"
+        android:layout_marginTop="30sp"
+        android:padding="5sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/editFilter"
+        android:layout_marginLeft="30sp"
+        android:hint="target text here"
+        android:background="?attr/colorControlHighlight"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:padding="20sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:layout_width="232dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editFilter"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/mainFeedback"
+        android:textStyle="normal|bold"
+        android:hint="( Last Result )"
+        android:layout_marginTop="30sp"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

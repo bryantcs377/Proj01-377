@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Event:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryLabelEvent"
+        android:layout_marginStart="27dp"
+        android:layout_alignTop="@+id/summary_event"
+        android:layout_alignParentStart="true"
+        android:padding="10sp"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignBottom="@+id/summary_event" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_rating"
+        android:text="rating"
+        android:textSize="18sp"
+        android:layout_marginTop="27dp"
+        android:padding="10sp"
+        android:background="@android:color/holo_green_dark"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/summaryLabelRating"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_event"
+        android:textSize="18sp"
+        android:text="event"
+        android:padding="10sp"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignBaseline="@+id/summary_rating"
+        android:layout_alignBottom="@+id/summary_rating"
+        android:layout_toEndOf="@+id/summaryLabelEvent"
+        tools:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Rating:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryLabelRating"
+        android:padding="10sp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/summary_rating"
+        android:layout_toEndOf="@+id/summary_event"
+        android:layout_alignBottom="@+id/summary_rating" />
+    <!--
+       <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="date"
+                android:textSize="18sp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/rating"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment"
+                android:textSize="18sp"
+            android:text="comment"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/date"
+            android:layout_alignParentStart="true" />
+    -->
+</RelativeLayout>

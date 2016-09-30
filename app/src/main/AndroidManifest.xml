@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DoAdd" />
+        <activity android:name=".DoList" />
+        <activity android:name=".ShowDetail"></activity>
     </application>
 
 </manifest>

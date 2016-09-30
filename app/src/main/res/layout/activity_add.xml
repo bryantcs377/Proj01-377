@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.bitbucket.proj01_377.DoAdd">
+
+
+    <TextView
+        android:text="Add Judgement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headingAdd"
+        android:layout_above="@+id/labelEvent"
+        android:textAlignment="center" />
+    <!-- @@@@@@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/labelDate"
+        android:layout_below="@+id/labelRating"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:padding="10sp"
+        android:background="@android:color/holo_orange_light" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@@ -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@ -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnAddSubmit"
+        android:onClick="addReview"
+        android:layout_alignTop="@+id/labelReview"
+        android:layout_toEndOf="@+id/labelRating"
+        android:layout_margin="50sp"
+        android:padding="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_feedback"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+
+        android:layout_below="@+id/btnAddSubmit"
+        android:hint="(Last Result)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:id="@+id/labelRating"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/detail_event"
+        android:layout_alignParentStart="true"
+        android:padding="10sp"
+        android:background="@android:color/holo_orange_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_date"
+        android:hint="Date Here"
+        android:layout_alignBaseline="@+id/labelDate"
+        android:layout_alignBottom="@+id/labelDate"
+        android:layout_toEndOf="@+id/labelReview"
+        android:layout_alignStart="@+id/detail_event" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_review"
+        android:hint="Judgement Here"
+        android:layout_alignBaseline="@+id/labelReview"
+        android:layout_alignBottom="@+id/labelReview"
+        android:layout_toEndOf="@+id/labelReview"
+        android:layout_alignStart="@+id/add_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judgement"
+        android:id="@+id/labelReview"
+        android:layout_below="@+id/add_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:padding="10sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_rating"
+        android:hint="Rating Here"
+        android:layout_alignBaseline="@+id/labelRating"
+        android:layout_alignBottom="@+id/labelRating"
+        android:layout_toEndOf="@+id/headingAdd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event:"
+        android:id="@+id/labelEvent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10sp"
+        android:background="@android:color/holo_orange_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_event"
+        android:hint="Event Here"
+        android:layout_alignBaseline="@+id/labelEvent"
+        android:layout_alignBottom="@+id/labelEvent"
+        android:layout_toEndOf="@+id/headingAdd" />
+
+
+</RelativeLayout>
