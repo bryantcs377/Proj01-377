@@ -16,6 +16,10 @@ package edu.bitbucket.proj01_377;
     *     can be commented out below (around line 40)
 
   Proudly formatted in 1975 East German Retro styling
+
+  PROTEST - the docs and tools for formatting displays are pitifully inadequate
+        and so, not surprisingly, my formatting follows the tools, i.e. pitiful
+     ?? Why not support CSS ??
  */
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
