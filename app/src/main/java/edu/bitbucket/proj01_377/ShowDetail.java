@@ -43,9 +43,9 @@ public class ShowDetail extends AppCompatActivity {
         TextView tvDate = (TextView) findViewById(R.id.detail_date);
         TextView tvReview = (TextView) findViewById(R.id.detail_review);
 
-        tvEvent.setText(event);
-        tvDate.setText(date);
-        tvRating.setText(rating);
-        tvReview.setText(review);
+        tvEvent.setText("Event: "+event);
+        tvDate.setText("Date: "+date);
+        tvRating.setText("Rating: "+rating);
+        tvReview.setText("Review: "+review);
     }
 }
